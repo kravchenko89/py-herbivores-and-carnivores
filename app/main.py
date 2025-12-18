@@ -8,21 +8,23 @@ class Animal:
         self.hidden = False
         Animal.alive.append(self)
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         return (f"Name: {self.name}, health: {self.health}, "
                 f"hidden: {self.hidden}")
 
-    def die(self):
+    def die(self) -> None:
         if self in Animal.alive:
             Animal.alive.remove(self)
 
 
 class Herbivore(Animal):
-    def hide(self):
+
+    def hide(self) -> None:
         self.hidden = not self.hidden
 
 
 class Сarnivore(Animal):
+
     def bite(self, other:str) -> None:
         if not isinstance(other, Herbivore):
             return
