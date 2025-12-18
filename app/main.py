@@ -1,4 +1,3 @@
-# write your code here
 class Animal:
     alive = []
 
@@ -11,6 +10,9 @@ class Animal:
     def __repr__(self) -> str:
         return (f"Name: {self.name}, Health: "
                 f"{self.health}, Hidden: {self.hidden}")
+
+    def __str__(self) -> str:
+        return self.__repr__()
 
     def die(self) -> None:
         if self in Animal.alive:
