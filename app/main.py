@@ -9,8 +9,8 @@ class Animal:
         Animal.alive.append(self)
 
     def __repr__(self) -> str:
-        return (f"(Name: {self.name}, health: "
-                f"{self.health}, hidden: {self.hidden})")
+        return (f"Name: {self.name}, Health: "
+                f"{self.health}, Hidden: {self.hidden}")
 
     def die(self) -> None:
         if self in Animal.alive:
