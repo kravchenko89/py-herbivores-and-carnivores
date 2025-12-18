@@ -1,10 +1,10 @@
 class Animal:
     alive = []
 
-    def __init__(self, name: str) -> None:
+    def __init__(self, name: str, health: int | float = 100, hidden = False) -> None:
         self.name = name
-        self.health = 100
-        self.hidden = False
+        self.health = health
+        self.hidden = hidden
         Animal.alive.append(self)
 
     def __repr__(self) -> str:
