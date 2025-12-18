@@ -7,9 +7,9 @@ class Animal:
         self.hidden = False
         Animal.alive.append(self)
 
-    def __repr__(self) -> str:
-        return (f"Name: {self.name}, Health: "
-                f"{self.health}, Hidden: {self.hidden}")
+    def __repr__(self) -> set[str]:
+        return {f"Name: {self.name}, Health: "
+                f"{self.health}, Hidden: {self.hidden}"}
 
     def __str__(self) -> str:
         return self.__repr__()
