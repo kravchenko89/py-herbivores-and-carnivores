@@ -2,7 +2,7 @@
 class Animal:
     alive = []
 
-    def __init__(self, name: str) -> str:
+    def __init__(self, name: str) -> None:
         self.name = name
         self.health = 100
         self.hidden = False
