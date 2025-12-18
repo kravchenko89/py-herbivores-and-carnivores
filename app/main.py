@@ -1,6 +1,7 @@
 # write your code here
 class Animal:
     alive = []
+
     def __init__(self, name: str) -> str:
         self.name = name
         self.health = 100
